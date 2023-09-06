@@ -12,7 +12,6 @@ public class ConversationModel : ObservableObject {
     
     public var readyToSendMsg: Bool = true
     
-    //private let openAI: SwiftOpenAI = SwiftOpenAI(apiKey: "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")
     private let openAI: SwiftOpenAI = SwiftOpenAI(apiKey: StoredPreferences.GetTokenApiKey()!)
     
     private var messages: [MessageChatGPT] = []
